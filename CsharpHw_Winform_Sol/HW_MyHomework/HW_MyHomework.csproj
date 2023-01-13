@@ -124,6 +124,7 @@
     <Compile Include="hw14_PictureView.Designer.cs">
       <DependentUpon>hw14_PictureView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interface\hw14_SubPanel_Interface.cs" />
     <Compile Include="Utility.cs" />
     <Compile Include="hw15_guessGuesser.cs">
       <SubType>Form</SubType>
