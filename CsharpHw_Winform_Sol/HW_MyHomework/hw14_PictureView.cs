@@ -1,4 +1,5 @@
-﻿using HW_MyHomework.Interface;
+﻿using Csharp_UtilityToolBox_Lib;
+using HW_MyHomework.Interface;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,6 +16,7 @@ namespace HW_MyHomework
 {
     public partial class hw14_PictureView : Form
     {
+        // hw14要做介面主表單叫出的多個子表單，當主表單關閉，大量的子表單要一起關閉，想用介面ISubPanel實作但失敗QQ
         private List<ISubPanel> subpanels;
         private string[] ImageList;
 
@@ -83,7 +85,8 @@ namespace HW_MyHomework
         private string[] LoadImages()
         {
             string myImageSource = $@"\source\image_hw";
-            var imgsPath = ConcatWithProjectPath(myImageSource);
+            var imgsPath = PathExtension.ProjectDirConcat(myImageSource);
+                // Utility.ConcatWithProjectPath(myImageSource);
             var fileEntries = ProcessDirectory(imgsPath);
             return fileEntries;
         }
@@ -119,10 +122,10 @@ namespace HW_MyHomework
         private void Form1_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             //foreach (var panel in (ISubPanel)subpanels )
-            foreach (var panel in subpanels)
-            {
-                panel.CloseSubPanel(panel as Form);
-            };
+            //foreach (var panel in subpanels)
+            //{
+            //    panel.CloseSubPanel(panel as Form);
+            //};
         }
         
     }

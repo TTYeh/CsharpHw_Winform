@@ -235,5 +235,11 @@
   <ItemGroup>
     <None Include="Resources\nasida2.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Csharp_UtilityToolBox_Lib\Csharp_UtilityToolBox_35_Lib.csproj">
+      <Project>{3152441d-6bb6-42f1-b6f3-bdcde94855ce}</Project>
+      <Name>Csharp_UtilityToolBox_35_Lib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

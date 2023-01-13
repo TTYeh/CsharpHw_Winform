@@ -106,6 +106,7 @@ namespace HW_MyHomework
             this.splitContainer1.Panel1.Controls.Add(this.btn_POS);
             this.splitContainer1.Panel1.Controls.Add(this.btn_Loan);
             this.splitContainer1.Panel1.Controls.Add(this.btn_hello);
+            this.splitContainer1.Panel1.ForeColor = System.Drawing.Color.Crimson;
             this.splitContainer1.Panel1.UseWaitCursor = true;
             // 
             // splitContainer1.Panel2

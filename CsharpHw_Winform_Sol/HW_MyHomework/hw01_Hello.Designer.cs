@@ -210,6 +210,7 @@ namespace HW_MyHomework
             this.Controls.Add(this.btn_hello);
             this.Controls.Add(this.btn_hi);
             this.Name = "hw01_Hello";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "你好!c#";
             this.Load += new System.EventHandler(this.Hello_01_Load);
             this.ResumeLayout(false);

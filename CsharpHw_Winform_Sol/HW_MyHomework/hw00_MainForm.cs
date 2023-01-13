@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Csharp_UtilityToolBox_Lib;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -34,6 +35,8 @@ namespace HW_MyHomework
         public hw00_MainForm()
         {
             InitializeComponent();
+            this.splitContainer1.Panel2.BackgroundImage = Image.FromFile(
+                PathExtension.ProjectDirConcat(@"\source\image_hw\nasida3.jpg"));
         }
 
 
