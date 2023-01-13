@@ -27,6 +27,9 @@ namespace HW_MyHomework
         private hw13_SmallPrinter _hw13;
         private hw14_PictureView _hw14;
         private hw15_guessMain _hw15;
+        private int subPanelHeight;
+        private int subPanelWidth;
+
 
         public hw00_MainForm()
         {
@@ -67,7 +70,12 @@ namespace HW_MyHomework
 
         private void mainForm_Load(object sender, EventArgs e)
         {
-            // do nothing
+            // 想要讓winform有RWD的效果但是有點難
+            var size = splitContainer1.Size;
+            var size2 = splitContainer1.SplitterRectangle;
+            subPanelHeight = Convert.ToInt32(Convert.ToDouble(splitContainer1.Panel2.Height) * 0.8);
+            subPanelWidth = Convert.ToInt32(Convert.ToDouble(splitContainer1.Panel2.Width) * 0.8); ;
+            splitContainer1.SplitterDistance = 200; //左邊按鈕最小寬度
         }
 
         private void btn_Loan_Click(object sender, EventArgs e)

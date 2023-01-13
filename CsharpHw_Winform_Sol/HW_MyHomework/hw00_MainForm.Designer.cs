@@ -63,7 +63,7 @@ namespace HW_MyHomework
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(0, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1457, 107);
+            this.panel1.Size = new System.Drawing.Size(1457, 125);
             this.panel1.TabIndex = 0;
             this.panel1.UseWaitCursor = true;
             // 
@@ -88,6 +88,7 @@ namespace HW_MyHomework
             // 
             // splitContainer1.Panel1
             // 
+            this.splitContainer1.Panel1.AutoScroll = true;
             this.splitContainer1.Panel1.AutoScrollMargin = new System.Drawing.Size(100, 0);
             this.splitContainer1.Panel1.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.splitContainer1.Panel1.Controls.Add(this.btn_Exam_guessNub);
@@ -117,7 +118,7 @@ namespace HW_MyHomework
             this.splitContainer1.Panel2.ForeColor = System.Drawing.Color.White;
             this.splitContainer1.Panel2.ImeMode = System.Windows.Forms.ImeMode.On;
             this.splitContainer1.Panel2.UseWaitCursor = true;
-            this.splitContainer1.Size = new System.Drawing.Size(1457, 555);
+            this.splitContainer1.Size = new System.Drawing.Size(1457, 646);
             this.splitContainer1.SplitterDistance = 496;
             this.splitContainer1.TabIndex = 1;
             this.splitContainer1.UseWaitCursor = true;
@@ -126,7 +127,7 @@ namespace HW_MyHomework
             // 
             this.btn_Exam_guessNub.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btn_Exam_guessNub.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Exam_guessNub.Location = new System.Drawing.Point(240, 237);
+            this.btn_Exam_guessNub.Location = new System.Drawing.Point(12, 651);
             this.btn_Exam_guessNub.Name = "btn_Exam_guessNub";
             this.btn_Exam_guessNub.Size = new System.Drawing.Size(155, 40);
             this.btn_Exam_guessNub.TabIndex = 0;
@@ -139,7 +140,7 @@ namespace HW_MyHomework
             // 
             this.buttonPictureView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.buttonPictureView.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonPictureView.Location = new System.Drawing.Point(240, 191);
+            this.buttonPictureView.Location = new System.Drawing.Point(12, 605);
             this.buttonPictureView.Name = "buttonPictureView";
             this.buttonPictureView.Size = new System.Drawing.Size(155, 40);
             this.buttonPictureView.TabIndex = 0;
@@ -152,7 +153,7 @@ namespace HW_MyHomework
             // 
             this.buttonSmallPrinter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.buttonSmallPrinter.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSmallPrinter.Location = new System.Drawing.Point(241, 145);
+            this.buttonSmallPrinter.Location = new System.Drawing.Point(13, 559);
             this.buttonSmallPrinter.Name = "buttonSmallPrinter";
             this.buttonSmallPrinter.Size = new System.Drawing.Size(155, 40);
             this.buttonSmallPrinter.TabIndex = 0;
@@ -165,7 +166,7 @@ namespace HW_MyHomework
             // 
             this.buttonNotepad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.buttonNotepad.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonNotepad.Location = new System.Drawing.Point(241, 99);
+            this.buttonNotepad.Location = new System.Drawing.Point(13, 513);
             this.buttonNotepad.Name = "buttonNotepad";
             this.buttonNotepad.Size = new System.Drawing.Size(155, 40);
             this.buttonNotepad.TabIndex = 0;
@@ -178,7 +179,7 @@ namespace HW_MyHomework
             // 
             this.buttonScreenSaver.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.buttonScreenSaver.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonScreenSaver.Location = new System.Drawing.Point(240, 53);
+            this.buttonScreenSaver.Location = new System.Drawing.Point(12, 467);
             this.buttonScreenSaver.Name = "buttonScreenSaver";
             this.buttonScreenSaver.Size = new System.Drawing.Size(155, 40);
             this.buttonScreenSaver.TabIndex = 0;
@@ -191,7 +192,7 @@ namespace HW_MyHomework
             // 
             this.button10_TicTacToeGame.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.button10_TicTacToeGame.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10_TicTacToeGame.Location = new System.Drawing.Point(240, 7);
+            this.button10_TicTacToeGame.Location = new System.Drawing.Point(12, 421);
             this.button10_TicTacToeGame.Name = "button10_TicTacToeGame";
             this.button10_TicTacToeGame.Size = new System.Drawing.Size(155, 40);
             this.button10_TicTacToeGame.TabIndex = 0;
@@ -324,7 +325,7 @@ namespace HW_MyHomework
             this.AutoScroll = true;
             this.AutoSize = true;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1457, 658);
+            this.ClientSize = new System.Drawing.Size(1457, 749);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
