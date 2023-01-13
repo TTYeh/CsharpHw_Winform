@@ -17,7 +17,7 @@ namespace HW_MyHomework
     public partial class hw14_PictureView : Form
     {
         // hw14要做介面主表單叫出的多個子表單，當主表單關閉，大量的子表單要一起關閉，想用介面ISubPanel實作但失敗QQ
-        private List<ISubPanel> subpanels;
+        //private List<ISubPanel> subpanels;
         private string[] ImageList;
 
         // 主要練習若this關掉時，this介面產生的圖片瀏覽小視窗(winForm)要跟著關，用介面。

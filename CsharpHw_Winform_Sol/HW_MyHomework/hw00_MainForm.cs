@@ -37,6 +37,9 @@ namespace HW_MyHomework
             InitializeComponent();
             this.splitContainer1.Panel2.BackgroundImage = Image.FromFile(
                 PathExtension.ProjectDirConcat(@"\source\image_hw\nasida3.jpg"));
+            // 強制設定滑鼠要用箭頭模式，不要等待模式
+            this.UseWaitCursor = false;
+            this.Cursor = Cursors.Arrow;
         }
 
 
