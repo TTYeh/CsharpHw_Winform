@@ -57,9 +57,10 @@ namespace HW_MyHomework
             newPictureBox.Click += delegate (Object ssender, EventArgs EE)
             {
                 hw14_PictureSubPanel sub = new hw14_PictureSubPanel(ImageList[number]);
+                sub.Owner= this;
                 var sub1 = sub as ISubPanel;
                 //subpanels.Append(sub1);
-                sub.ShowDialog();
+                sub.Show();
             };
             return newPictureBox;
         }
