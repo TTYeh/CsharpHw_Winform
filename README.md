@@ -27,6 +27,8 @@
 ### 3. (已解決)不曉得為何我的winform一直轉圈圈好像在跑什麼?
 Form的UseWaitCursor屬性設定為true，就強制cursor只能是waiting狀態。改成false解決。
 ### 4. (已解決)hw14要做介面主表單叫出的多個子表單，當主表單關閉，大量的子表單要一起關閉，想用介面ISubPanel實作但失敗QQ
-只要加個frm.owner = this就解決了。
-
+'''csharp=
+frm.owner = this
+'''
+感謝AllenKuo大大提供好解法^^
 
