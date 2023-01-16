@@ -8,7 +8,9 @@
 
 
 ## 目前待解議題:
-### 1. (已解決)讓子表單(winform)可以跟著主表單大小變動:已解決參考this.splitContainer1.Panel2.Controls.Add(frm);
+### 1. (已解決)讓子表單(winform)可以跟著主表單大小變動:
+以下是解決方法:
+參考this.splitContainer1.Panel2.Controls.Add(frm);
 ### 2. (想不出來)讓new一個新winform可以寫成function例如
 
           if (_hw06 == null || IsClosed("hw06_StudentGrade_List"))
@@ -25,10 +27,20 @@
             }
 
 ### 3. (已解決)不曉得為何我的winform一直轉圈圈好像在跑什麼?
+以下是解決方法:
 Form的UseWaitCursor屬性設定為true，就強制cursor只能是waiting狀態。改成false解決。
 ### 4. (已解決)hw14要做介面主表單叫出的多個子表單，當主表單關閉，大量的子表單要一起關閉，想用介面ISubPanel實作但失敗QQ
-'''csharp=
-frm.owner = this
-'''
+以下是解決方法:
+
+            // MainPanel的按下事件發生後執行方法，將subPanel的showdDialog方法加進去
+            newPictureBox.Click += delegate (Object ssender, EventArgs EE)
+            {
+                hw14_PictureSubPanel sub = new hw14_PictureSubPanel(ImageList[number]);
+                sub.Owner= this; // 解決主表單關閉，子表單跟著關閉的問題
+                var sub1 = sub as ISubPanel;
+                //subpanels.Append(sub1);
+                sub.Show();
+            };
+            
 感謝AllenKuo大大提供好解法^^
 
