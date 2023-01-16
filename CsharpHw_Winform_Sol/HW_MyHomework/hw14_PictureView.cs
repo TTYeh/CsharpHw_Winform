@@ -57,7 +57,7 @@ namespace HW_MyHomework
             newPictureBox.Click += delegate (Object ssender, EventArgs EE)
             {
                 hw14_PictureSubPanel sub = new hw14_PictureSubPanel(ImageList[number]);
-                sub.Owner= this;
+                sub.Owner= this; // 解決主表單關閉，子表單跟著關閉的問題
                 var sub1 = sub as ISubPanel;
                 //subpanels.Append(sub1);
                 sub.Show();
