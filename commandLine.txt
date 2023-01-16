@@ -1,0 +1,83 @@
+# Variable block
+let randomIdentifier=$RANDOM$RANDOM
+location=East US
+resourceGroup=msdocs-azuresql-rg-$randomIdentifier
+tag=create-and-configure-database
+server=msdocs-azuresql-server-$randomIdentifier
+database=msdocsazuresqldb$randomIdentifier
+login=azureuser
+password=Pa$$w0rD-$randomIdentifier
+# Specify appropriate IP address values for your environment
+# to limit access to the SQL Database server
+startIp=172.18.106.80
+endIp=172.18.106.80
+
+echo Using resource group $resourceGroup with login $login, password $password...
+
+
+echo Creating $resourceGroup in $location...
+az group create --name $resourceGroup --location $location --tags $tag
+
+echo Creating $server in $location...
+az sql server create --name $server --resource-group $resourceGroup --location $location --admin-user $login --admin-password $password
+
+echo Configuring firewall...
+az sql server firewall-rule create --resource-group $resourceGroup --server $server -n AllowYourIp --start-ip-address $startIp --end-ip-address $endIp
+
+echo Creating $database in serverless tier
+az sql db create 
+    --resource-group $resourceGroup 
+    --server $server 
+    --name $database 
+    --sample-name AdventureWorksLT 
+    --edition GeneralPurpose 
+    --compute-model Serverless 
+    --family Gen5 
+    --capacity 2
+
+標題 連線至伺服器
+------------------------------
+
+無法連線至 msdocs-azuresql-server-786601145.database.windows.net。
+
+------------------------------
+其他資訊
+
+Login failed for user 'azureuser'. (Microsoft SQL Server, 錯誤 18456)
+
+如需說明，請按一下 httpsdocs.microsoft.comsqlrelational-databaseserrors-eventsmssqlserver-18456-database-engine-error
+
+------------------------------
+按鈕
+
+確定
+------------------------------
+標題 連線至伺服器
+------------------------------
+
+無法連線至 eddy-travelweb-devserver.database.windows.net。
+
+------------------------------
+其他資訊
+
+Login failed for user 'token-identified principal'. (Microsoft SQL Server, 錯誤 18456)
+
+如需說明，請按一下 httpsdocs.microsoft.comsqlrelational-databaseserrors-eventsmssqlserver-18456-database-engine-error
+
+------------------------------
+按鈕
+
+確定
+------------------------------
+
+命令見資料庫
+httpslearn.microsoft.comzh-twazureazure-sqldatabasesingle-database-create-quickstartview=azuresql&tabs=azure-cli#code-try-0
+
+
+
+
+
+
+
+
+
