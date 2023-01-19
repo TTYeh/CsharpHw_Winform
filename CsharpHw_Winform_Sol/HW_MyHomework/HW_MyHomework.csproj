@@ -176,6 +176,9 @@
     <EmbeddedResource Include="hw03_POS.resx">
       <DependentUpon>hw03_POS.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="hw04_StudentStruc.resx">
+      <DependentUpon>hw04_StudentStruc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="hw06_StudentGradeList.resx">
       <DependentUpon>hw06_StudentGradeList.cs</DependentUpon>
     </EmbeddedResource>
