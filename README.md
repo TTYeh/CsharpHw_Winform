@@ -3,7 +3,7 @@
 - hw01 helloworld(寫開心的)
 - hw02 LoanMain(了解貸款公式是甚麼，ps微軟有現成公式)
 - hw03 POS(練習LinQ)
-- hw04 student(練習LinQ)
+- hw04 student(練習LinQ，熟習怎麼生Data放到dataGridView)
 - hw14 pictureviewer(了解form.owner可關)
 - hw15 GuessNumber(了解form之間如何互傳資料 答form.owner傳資料)
 
