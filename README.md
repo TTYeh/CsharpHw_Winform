@@ -1,10 +1,24 @@
 # CsharpHw_Winform
 ## 目前做好的部分:
-- hw01 helloworld
-- hw02 LoanMain
-- hw03 POS
-- hw14 pictureviewer
-- hw15 GuessNumber
+- hw01 helloworld(寫開心的)
+- hw02 LoanMain(了解貸款公式是甚麼，ps微軟有現成公式)
+- hw03 POS(練習LinQ)
+- hw04 student(練習LinQ)
+- hw14 pictureviewer(了解form.owner可關)
+- hw15 GuessNumber(了解form之間如何互傳資料 答form.owner傳資料)
+
+## 跳過的題目
+- hw05 應該要跟4整合的，有bug
+- hw06 和hw05太像沒意義，增加個功能就加個winform，有bug
+- hw07 太亂和太簡單
+- hw08 計算機
+- hw09 太亂和太簡單
+
+## 可以做的
+- hw10 圈圈叉叉(思考矩陣)
+- hw11 螢幕保護程式?
+- hw12 notepad程式
+- hw13小畫家
 
 
 ## 目前待解議題:
