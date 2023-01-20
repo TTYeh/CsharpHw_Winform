@@ -185,6 +185,9 @@
     <EmbeddedResource Include="hw09_ControlStructure.resx">
       <DependentUpon>hw09_ControlStructure.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="hw10_TicTacToeGame.resx">
+      <DependentUpon>hw10_TicTacToeGame.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="hw13_小畫家.resx">
       <DependentUpon>hw13_小畫家.cs</DependentUpon>
     </EmbeddedResource>
