@@ -4,6 +4,8 @@
 - hw02 LoanMain(了解貸款公式是甚麼，ps微軟有現成公式)
 - hw03 POS(練習LinQ)
 - hw04 student(練習LinQ，熟習怎麼生Data放到dataGridView)
+- hw10 圈圈叉叉(事件呼叫練習，思考矩陣，可以做但還是寫死了)
+- hw13 小畫家(練習color函數)
 - hw14 pictureviewer(了解form.owner可關)
 - hw15 GuessNumber(了解form之間如何互傳資料 答form.owner傳資料)
 
@@ -15,10 +17,8 @@
 - hw09 太亂和太簡單
 
 ## 可以做的
-- hw10 圈圈叉叉(思考矩陣)
 - hw11 螢幕保護程式?
 - hw12 notepad程式
-- hw13小畫家
 
 
 ## 目前待解議題:
